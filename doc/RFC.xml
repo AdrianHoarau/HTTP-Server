@@ -1,0 +1,154 @@
+<?xml version='1.0' encoding="UTF-8"?>
+<rfc>
+    <front>
+        <title>ZIA Protocol</title>
+
+        <author initials='C.B.' surname='Benjamin'
+                fullname='Coulon Benjamin'>
+            <organization>Epitech, Inc.</organization>
+        </author>
+
+        <author initials='H.A.' surname='Adrian'
+                fullname='Hoarau Adrian'>
+            <organization>Epitech, Inc.</organization>
+        </author>
+
+        <author initials='B.A.' surname='Arthur'
+                fullname='Bertaud Arthur'>
+            <organization>Epitech, Inc.</organization>
+        </author>
+
+        <author initials='V.M.' surname='Matthias'
+                fullname='Virassamy Matthias'>
+            <organization>Epitech, Inc.</organization>
+        </author>
+
+        <author initials='L.Y.' surname='Yoann'
+                fullname='Le Pech Yoann'>
+            <organization>Epitech, Inc.</organization>
+        </author>
+
+        <date month='March' year='2021' />
+
+        <area>General</area>
+        <workgroup>O.G Working Group</workgroup>
+        <keyword>RFC</keyword>
+        <keyword>Request for Comments</keyword>
+        <keyword>ZIA Protocol</keyword>
+        <keyword>RTP</keyword>
+        <abstract>
+            <t>This memo presents the way of using the
+            ZIA Protocol as the interaction with the
+            server. Request for Comments (RFC) series.</t>
+        </abstract>
+    </front>
+    <middle>
+        <section title="TABLE OF CONTENT">
+            <t>
+                <list style="numbers">
+                    <t>Introduction....................................................2</t>
+                    <t>Request-Response................................................3
+                        <list style="numbers">
+                            <t>Request Structure...........................................3
+                                <list style="numbers">
+                                    <t>HTTP Method.............................................3</t>
+                                    <t>Target..................................................3</t>
+                                    <t>Protocol-Version........................................3</t>
+                                    <t>Host....................................................3</t>
+                                    <t>Method String...........................................3</t>
+                                    <t>Body....................................................3</t>
+                                </list>
+                            </t>
+                            <t>Response Structure..........................................4
+                                <list style="numbers">
+                                    <t>Protocol-Version........................................4</t>
+                                    <t>HTTP codes..............................................4</t>
+                                    <t>description.............................................4</t>
+                                    <t>Body....................................................4</t>
+                                </list>
+                            </t>
+                        </list>
+                    </t>
+                    <t>HTTP Methods....................................................4
+                        <list style="numbers">
+                            <t>GET.........................................................4</t>
+                            <t>POST........................................................4</t>
+                            <t>PUT.........................................................4</t>
+                            <t>DELETE......................................................4</t>
+                        </list>
+                    </t>
+                    <t>HTTP Response codes.............................................5</t>
+                </list>
+            <vspace blankLines='2'/>
+            </t>
+        </section>
+        <section title='INTRODUCTION'>
+            <t>HTTP functions as a request-response protocol in the client-server computing model.
+            A web browser, for example, may be the client and an application running on a computer
+            hosting a website may be the server. The client submits an HTTP request message to 
+            the server. The server, which provides resources such as HTML files and other content,
+            or performs other functions on behalf of the client, returns a response message to the 
+            client. The response contains completion status information about the request and 
+            maybe also contain requested content in its message body.<vspace blankLines='2'/></t>
+        </section>
+
+        <section title='Request-Response'>
+
+            <section title='Request Structure'>
+                <section title='HTTP Method'>
+                    <t> The HTTP method used.<vspace blankLines='1'/></t>
+                </section>
+                <section title='Target'>
+                    <t> The request target, usually a URL, or the absolute path of the protocol,
+                    port, and domain are usually characterized by the request context. The
+                    format of this request target varies between different HTTP methods.<vspace blankLines='1'/></t>
+                </section>
+                <section title='Protocol-Version'>
+                    <t> The actual version of the protocol used.<vspace blankLines='1'/></t>
+                </section>
+                <section title='Host'>
+                    <t> The host who is sending the request.<vspace blankLines='1'/></t>
+                </section>
+                <section title='Body'>
+                    <t> The final part of the request. Not all requests have one.<vspace blankLines='2'/></t>
+                </section>
+            </section>
+
+            <section title='Response Structure'>
+                <section title='Protocol-Version'>
+                    <t> The actual version of the protocol used.<vspace blankLines='1'/></t>
+                </section>
+                <section title='HTTP codes'>
+                    <t> The code returned.<vspace blankLines='1'/></t>
+                </section>
+                <section title='description'>
+                    <t> The description of the code returned.<vspace blankLines='1'/></t>
+                </section>
+                <section title='Body'>
+                    <t> The last part of a response is the body. Not all responses have one.<vspace blankLines='2'/></t>
+                </section>
+            </section>
+        </section>
+
+        <section title='HTTP Methods'>
+            <section title='GET'>
+                <t>The GET method is used to retrieve information from the given host<vspace blankLines='1'/></t>
+            </section>
+            <section title='POST'>
+                <t>The POST methode is used to send data to the server<vspace blankLines='1'/></t>
+            </section>
+            <section title='PUT'>
+                <t>Replaces all current representations of the target resource with the uploaded content<vspace blankLines='1'/></t>
+            </section>
+            <section title='DELETE'>
+                <t>Deletes all the current representations of the targeted resource<vspace blankLines='2'/></t>
+            </section>
+        </section>
+
+        <section title='HTTP Response codes'>
+                <t>The response codes are the ones referenced in the official Hypertext Transfer Protocol RFC.
+                Please check the 'RFC 2616 - Hypertext Transfer Protocol -- HTTP/1.1'<vspace blankLines='1'/></t>
+        </section>
+    </middle>
+    <back></back>
+</rfc>

@@ -1,0 +1,11 @@
+{
+    "zia": {
+        "modules": [
+            "phpCgiModule",
+            "sslModule",
+            "snakeModule"
+        ],
+        "SSL Certificate Path": "../config/SSL/mycert.pem",
+        "CGI Dir Path": "../config/PHP/"
+    }
+}
